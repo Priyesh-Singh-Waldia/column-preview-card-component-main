@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+
+:root {
+  --brightOrange: hsl(31, 77%, 52%);
+  --darkCyan: hsl(184, 100%, 22%);
+  --veryDarkCyan: hsl(179, 100%, 13%);
+  --para: hsla(0, 0%, 100%, 0.75);
+  --bg-hd-btn: hsl(0, 0%, 95%);
+}
+
+/* Body */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  min-height: 100vh;
+  font-size: 15px;
+  background-color: var(--bg-hd-btn);
+  font-family: "Lexend Deca", sans-serif;
+  color: var(--bg-hd-btn);
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 921px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 1rem;
+}
+
+.box {
+  padding: 3.1rem;
+}
+
+.orange {
+  background-color: var(--brightOrange);
+}
+
+.teal {
+  background-color: var(--darkCyan);
+}
+
+.green {
+  background-color: var(--veryDarkCyan);
+}
+
+/* HTML Elements */
+h1 {
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+
+p {
+  line-height: 1.6;
+  color: var(--para);
+  padding-bottom: 4.5rem;
+}
+
+button {
+  font-family: "Lexend Deca", sans-serif;
+  border: none;
+  padding: 0.8rem 1.8rem;
+  border: 2px solid var(--bg-hd-btn);
+  border-radius: 50px;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0);
+  color: var(--bg-hd-btn);
+}
+
+.b1 {
+  color: var(--brightOrange);
+}
+
+.b2 {
+  color: var(--darkCyan);
+}
+
+.b3 {
+  color: var(--veryDarkCyan);
+}
+
+/* 👣 Footer */
+.attribution {
+  position: absolute;
+  font-size: 11px;
+  bottom: 0;
+  text-align: center;
+  color: black;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* 📱 Media Query */
+@media only screen and (max-width: 920px) {
+  .container {
+    flex-direction: column;
+    max-width: 500px;
+    height: auto;
+  }
+
+  p {
+    padding-bottom: 1rem;
+  }
+
+  .attribution {
+    display: none;
+  }
+}
